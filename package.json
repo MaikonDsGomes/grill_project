@@ -1,0 +1,14 @@
+{
+  "name": "grill_project",
+  "version": "1.0.0",
+  "description": "Landing page sobre um restaurante",
+  "main": "index.js",
+  "scripts": {
+        "compile:sass": "node-sass sass/main.scss css/index.css -w"
+  },
+  "author": "Maikon",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
