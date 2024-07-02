@@ -179,7 +179,56 @@
     transform: translate(-50%, -30px); }
 
 .contato {
-  padding: 3rem 1rem; }
+  padding: 3rem 1rem;
+  margin-top: 6rem;
+  background-color: #242424;
+  color: white; }
+  .contato h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: 500;
+    color: white; }
+  .contato input,
+  .contato textarea {
+    border: none;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    border-radius: .3rem;
+    margin-bottom: 1rem; }
+  .contato textarea {
+    height: 10rem; }
+  .contato .centro {
+    display: flex;
+    flex-direction: column; }
+  .contato_forma-w {
+    width: 60rem; }
+  .contato_form {
+    width: 60rem;
+    margin: 0 auto; }
+    .contato_form-block {
+      display: flex;
+      gap: 2rem; }
+      .contato_form-block div {
+        width: 50%; }
+  .contato .form-block-chk {
+    width: unset;
+    cursor: pointer;
+    margin-bottom: 0px; }
+  .contato .chk_msg {
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+  .contato button {
+    float: right;
+    padding: 0.5rem 3.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #ffff;
+    border-radius: .3rem 1rem .3rem 1.5rem; }
+    .contato button:active {
+      transform: translateY(0.2rem); }
 
 /* 
 
