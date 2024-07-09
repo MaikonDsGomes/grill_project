@@ -1,11 +1,11 @@
 .sobre {
 
-    padding: 3rem 1rem;
+    padding: 5rem 1rem;
 
     & h1 {
         text-align: center;
-        margin-bottom: 3rem;
-        font-size: 3rem;
+        margin-bottom: 5rem;
+        font-size: 5rem;
         font-weight: 500;
     }
 
@@ -14,27 +14,27 @@
     }
 
     & img {
-        width: 100%;
+        width: 85%;
         border-radius: .5rem;
     }
 
     & .sobre_txt-box {
-        width: 90rem;
+        width: 120rem;
         padding: 0rem 3rem;
     }
 
     & .sobre_txt-box p {
-        margin-bottom: 1.5rem;
-        line-height: 1.9rem;
-        font-size: 1.3rem;
+        margin-bottom: 2.5rem;
+        line-height: 2.9rem;
+        font-size: 2rem;
     }
 
     & button {
         float: right;
-        padding: .3rem 1.5rem;
+        padding: .9rem 3.5rem;
         border: none;
         border-radius: .3rem;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         font-weight: 500;
         background: #ab0000;
         color: white;

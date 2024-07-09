@@ -31,7 +31,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%); }
   .banner h1 span {
     display: block; }
-  .banner h1 {
+  .banner h2 {
     text-align: center;
     top: 35%;
     left: 50%;
@@ -42,12 +42,12 @@
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    padding: 0.8rem 2rem;
+    padding: 1rem 3rem;
     border-radius: .5rem;
     background: white;
     border: none;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     transition: all 0.2s; }
   .banner-btn:hover {
     transform: translate(-50%, -70%); }
@@ -60,33 +60,38 @@
 .titulo2_spn {
   letter-spacing: 10px;
   color: white;
-  font-weight: lighter; }
+  font-size: 2rem;
+  font-weight: lighter;
+  display: block;
+  background-image: linear-gradient(to right, #ffff, #f2f2f2);
+  -webkit-background-clip: text;
+  color: transparent; }
 
 .sobre {
-  padding: 3rem 1rem; }
+  padding: 5rem 1rem; }
   .sobre h1 {
     text-align: center;
-    margin-bottom: 3rem;
-    font-size: 3rem;
+    margin-bottom: 5rem;
+    font-size: 5rem;
     font-weight: 500; }
   .sobre .centro {
     display: flex; }
   .sobre img {
-    width: 100%;
+    width: 85%;
     border-radius: .5rem; }
   .sobre .sobre_txt-box {
-    width: 90rem;
+    width: 120rem;
     padding: 0rem 3rem; }
   .sobre .sobre_txt-box p {
-    margin-bottom: 1.5rem;
-    line-height: 1.9rem;
-    font-size: 1.3rem; }
+    margin-bottom: 2.5rem;
+    line-height: 2.9rem;
+    font-size: 2rem; }
   .sobre button {
     float: right;
-    padding: .3rem 1.5rem;
+    padding: .9rem 3.5rem;
     border: none;
     border-radius: .3rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 500;
     background: #ab0000;
     color: white;
@@ -96,7 +101,7 @@
     transform: translateY(0.5rem); }
 
 .servico {
-  padding: 3rem 1rem;
+  padding: 5rem 1rem;
   background-color: #242424; }
   .servico h1 {
     text-align: center;
@@ -105,12 +110,12 @@
     font-size: 3rem;
     font-weight: 500; }
   .servico h3 {
-    font-size: 1.5rem;
-    padding: .4rem 0rem; }
+    font-size: 2.5rem;
+    padding: 1rem 0rem; }
   .servico p {
     text-align: center;
     padding-bottom: 1.2rem;
-    font-size: 1.1rem; }
+    font-size: 1.7rem; }
   .servico img {
     width: 265px;
     height: 170px;
@@ -125,14 +130,14 @@
     flex-direction: column;
     align-items: center;
     background: #fff;
-    padding: 0rem 1rem; }
+    padding: 0rem 2rem; }
   .servico .servico_card div {
     display: flex;
     justify-content: center;
-    height: 7rem; }
+    height: 13rem; }
 
 .lancamento {
-  padding: 3rem 1rem; }
+  padding: 5rem 1rem; }
   .lancamento h1 {
     text-align: center;
     margin-bottom: 3rem;
@@ -141,7 +146,7 @@
   .lancamento img {
     width: 100%;
     height: auto;
-    max-width: 16rem;
+    max-width: 27rem;
     /* Para garantir que não exceda o tamanho desejado */
     display: block;
     margin: 0 auto;
@@ -157,18 +162,20 @@
     .lancamento .card_txt {
       text-align: justify; }
       .lancamento .card_txt h3 {
-        text-align: center; }
+        text-align: center;
+        font-size: 2.1rem; }
       .lancamento .card_txt p {
         padding: .2rem 1rem;
-        line-height: 1.5rem; }
+        line-height: 2rem;
+        font-size: 1.5rem; }
   .lancamento button {
     margin: 3.5rem auto;
     color: #ffffff;
     background-color: #ab0000;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     border-radius: .3rem;
     text-align: center;
-    padding: .5rem 1.5rem;
+    padding: 1rem 1.5rem;
     border: none;
     position: absolute;
     left: 50%;
@@ -179,10 +186,14 @@
     transform: translate(-50%, -30px); }
 
 .contato {
-  padding: 3rem 1rem;
+  padding: 5rem 1rem;
   margin-top: 6rem;
   background-color: #242424;
   color: white; }
+  .contato span {
+    font-size: 1.5rem; }
+  .contato label {
+    font-size: 1.5rem; }
   .contato h1 {
     text-align: center;
     margin-bottom: 3rem;
@@ -193,9 +204,9 @@
   .contato textarea {
     border: none;
     width: 100%;
-    padding: 0.5rem 0.5rem;
-    font-size: 1rem;
-    border-radius: .3rem;
+    padding: 1rem 0.5rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
     margin-bottom: 1rem; }
   .contato textarea {
     height: 10rem; }
@@ -222,8 +233,8 @@
     gap: 1rem; }
   .contato button {
     float: right;
-    padding: 0.5rem 3.3rem;
-    font-size: 1rem;
+    padding: 1rem 3.3rem;
+    font-size: 1.4rem;
     cursor: pointer;
     background: #ffff;
     border-radius: .3rem 1rem .3rem 1.5rem; }
@@ -237,7 +248,11 @@ font-family: "Montserrat", sans-serif;
 
 */
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  font-size: 62.5%; }
+
+h1 {
+  font-size: 4.5rem !important; }
 
 * {
   padding: 0;
@@ -248,3 +263,13 @@ html {
 .centro {
   max-width: 1200px;
   margin: 0 auto; }
+
+.notificacao {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 100;
+  background: #3b993b;
+  padding: 1rem 2rem;
+  border-radius: .5rem; }

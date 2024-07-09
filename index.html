@@ -26,11 +26,12 @@
 
     </header>
 
+   
     <section class="banner">
-        <h1>
+        <h2>
             <span class="titulo1_spn">Best Steak House N1°</span>
             <span class="titulo2_spn">By Revista Veja</span>
-        </h1>
+        </h2>
         <button class="banner-btn">Descubra o melhor</button>
     </section>
 
@@ -137,6 +138,11 @@
         </div>
     </section>
 
+    <div style="display: none;" class="notificacao">
+        <p>Formulario enviado com sucesso</p>
+    </div>
+
+
     <section class="contato">
         <h1>Contato</h1>
         <div class="centro">
@@ -146,23 +152,23 @@
 
                     <div>
                         <label>Nome: </label>
-                        <input placeholder="Digite seu nome" type="text">
+                        <input id="nome" placeholder="Digite seu nome" type="text">
                     </div>
 
                     <div>
                         <label>Telefone:</label>
-                        <input placeholder="Digite seu telefone com dd" type="text">
+                        <input id="tel" placeholder="Digite seu telefone com dd" type="text">
                     </div>
                 </div>
 
                 <div>
                     <label>Email:</label>
-                    <input placeholder="Digite seu email" type="text">
+                    <input id="email" placeholder="Digite seu email" type="text">
                 </div>
 
                 <div>
                     <label>Mensagem</label> <br>
-                    <textarea cols="10" rows="50" placeholder="Digite sua mensagem"></textarea>
+                    <textarea id="msg" cols="10" rows="50" placeholder="Digite sua mensagem"></textarea>
                 </div>
 
 
@@ -171,7 +177,7 @@
                     <input class="form-block-chk" type="checkbox">
                 </div>
                 <div>
-                    <button>Enviar</button>
+                    <button onclick="enviar()">Enviar</button>
 
                 </div>
 
@@ -183,3 +189,14 @@
 </body>
 
 </html>
+
+<script>
+
+ function enviar(){
+    nome.value = "";
+    tel.value = "";
+    email.value = "";
+    msg.value = "";
+ }
+
+</script>
