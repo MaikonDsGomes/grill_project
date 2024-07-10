@@ -32,11 +32,8 @@
   .banner h1 span {
     display: block; }
   .banner h2 {
-    text-align: center;
-    top: 35%;
-    left: 50%;
     position: absolute;
-    transform: translate(-50%, -50%); }
+    text-align: center; }
   .banner-btn {
     top: 55%;
     left: 50%;
@@ -50,22 +47,27 @@
     font-size: 1.8rem;
     transition: all 0.2s; }
   .banner-btn:hover {
-    transform: translate(-50%, -70%); }
+    transform: translate(-50%, -60%); }
 
-.titulo1_spn {
+.titulo1 {
   color: white;
   font-size: 64px;
-  font-weight: 700; }
+  font-weight: 700;
+  animation: leftToRight .8s;
+  transition: all .8s;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
-.titulo2_spn {
+.titulo2 {
   letter-spacing: 10px;
   color: white;
-  font-size: 2rem;
-  font-weight: lighter;
+  font-size: 3rem;
+  font-weight: 100;
   display: block;
-  background-image: linear-gradient(to right, #ffff, #f2f2f2);
-  -webkit-background-clip: text;
-  color: transparent; }
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .sobre {
   padding: 5rem 1rem; }
@@ -130,7 +132,8 @@
     flex-direction: column;
     align-items: center;
     background: #fff;
-    padding: 0rem 2rem; }
+    padding: 0rem 2rem;
+    height: 25rem; }
   .servico .servico_card div {
     display: flex;
     justify-content: center;
@@ -240,6 +243,40 @@
     border-radius: .3rem 1rem .3rem 1.5rem; }
     .contato button:active {
       transform: translateY(0.2rem); }
+
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translate(-90%, -50%); }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+
+.titulo1 {
+  animation: leftToRight 1s;
+  animation-delay: .2s; }
+
+@keyframes rightToLeft {
+  0% {
+    opacity: 0;
+    transform: translate(30%, -50%); }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+
+.titulo2 {
+  animation: rightToLeft 1s; }
+
+@keyframes bottomToTop {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 16rem); }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+
+.banner-btn {
+  animation: bottomToTop 1s; }
 
 /* 
 

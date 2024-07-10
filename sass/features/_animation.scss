@@ -1,0 +1,54 @@
+@keyframes leftToRight {
+    0% {
+        opacity: 0;
+        transform: translate(-90%, -50%);
+    }
+
+
+
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+.titulo1 {
+    animation: leftToRight 1s;
+    animation-delay: .2s;
+}
+
+@keyframes rightToLeft {
+    0% {
+        opacity: 0;
+        transform: translate(30%, -50%);
+    }
+
+        
+
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+.titulo2{
+    animation: rightToLeft 1s;    
+}
+
+@keyframes bottomToTop {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 16rem);
+    }
+
+        
+
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+.banner-btn{
+    animation: bottomToTop 1s;
+}
